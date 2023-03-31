@@ -1,0 +1,22 @@
+{
+  "name": "fame-wordpress-test",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build && astro preview",
+    "preview": "astro preview",
+    "astro": "astro",
+    "format": "prettier --write --no-error-on-unmatched-pattern --list-different --ignore-path .gitignore **/*.{js,cjs,mjs,ts,tsx,md,mdx,json,astro}"
+  },
+  "dependencies": {
+    "@astrojs/tailwind": "^3.1.1",
+    "astro": "^2.1.8",
+    "tailwindcss": "^3.3.1"
+  },
+  "devDependencies": {
+    "prettier": "^2.8.7",
+    "prettier-plugin-astro": "^0.8.0",
+    "prettier-plugin-tailwindcss": "^0.2.6"
+  }
+}

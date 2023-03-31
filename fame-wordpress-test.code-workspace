@@ -1,0 +1,70 @@
+{
+  "folders": [
+    // * Website
+    {
+      "name": "frontend",
+      "path": "frontend"
+    },
+    // * Files in root of project folder
+    {
+      "name": "root",
+      "path": "./"
+    }
+  ],
+  "settings": {
+    // * Hide folders from root
+    "files.exclude": {
+      "frontend": true
+    },
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    // * Using Prettier as default code formater
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false,
+    "[astro]": {
+      "editor.defaultFormatter": "astro-build.astro-vscode"
+    },
+    "[python]": {
+      "editor.defaultFormatter": null,
+      "editor.tabSize": 4
+    },
+    // * Linting is the automated checking of code for programmatic and stylistic errors.
+    "python.linting.pylintEnabled": false,
+    "python.linting.pylamaEnabled": true,
+    "python.linting.enabled": true,
+    "python.linting.pylamaArgs": ["--ignore=E501"],
+    // * Formatting code so that it strictly adheres to a pre-configured set of rules.
+    "python.formatting.provider": "black",
+    "todo-tree.highlights.defaultHighlight": {
+      "icon": "alert",
+      "type": "text",
+      "foreground": "#ef4444",
+      "background": "#ffffff",
+      "opacity": 50,
+      "iconColour": "#3b82f6"
+    },
+    "todo-tree.highlights.customHighlight": {
+      "FIXME": {
+        "type": "text-and-comment",
+        "foreground": "#ef4444",
+        "background": "#ef4444",
+        "opacity": 35,
+        "iconColour": "#ef4444",
+        "gutterIcon": true
+      },
+      "TODO": {
+        "type": "text-and-comment",
+        "foreground": "#f97316",
+        "background": "#f97316",
+        "opacity": 35,
+        "iconColour": "#f97316",
+        "gutterIcon": true
+      }
+    }
+  }
+}

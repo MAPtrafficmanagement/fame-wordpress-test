@@ -1,0 +1,23 @@
+---
+const { page } = Astro.props;
+---
+
+<header>
+  <nav
+    class="flex h-full w-full overflow-auto bg-zinc-200 shadow-md"
+    x-data
+    x-show="$store.tabStore.tab"
+    aria-label="Tabs"
+    x-cloak
+  >
+    <template x-for="(item, index) in $store.tabStore.tabs">
+      <a
+        :href="`#${item}`"
+        x-text="item.replace(/_/g, ' ')"
+        @click="$store.tabStore.tab=item"
+        class="flex-none px-4 py-3 font-medium first-letter:capitalize"
+        :class="$store.tabStore.tab === item ? 'bg-zinc-200 text-maptm-orange' : 'text-zinc-500 hover:bg-zinc-200 hover:text-maptm-orange'"
+        :key="index"></a>
+    </template>
+  </nav>
+</header>

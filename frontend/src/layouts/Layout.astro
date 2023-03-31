@@ -1,0 +1,40 @@
+---
+
+const { title, page } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Taxonomy"
+    />
+    <meta name="author" content="MAP traffic management B.V." />
+
+    <title>Taxonomy | {title}</title>
+
+    <link rel="shortcut icon" href="/favicon.ico" />
+  </head>
+
+  <body class="h-screen bg-zinc-50" data-page={page}>
+    <div class="flex h-full">
+      <div class="flex flex-1 flex-col overflow-hidden">
+        <div class="flex flex-1 items-stretch overflow-hidden">
+          <main class="flex-1 overflow-y-auto overflow-x-hidden">
+            <slot />
+          </main>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<style is:global>
+  [x-cloak] {
+    display: none !important;
+  }
+</style>
