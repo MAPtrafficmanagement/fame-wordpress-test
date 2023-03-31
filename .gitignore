@@ -1,11 +1,3 @@
 .vscode
 __pycache__
 /venv*
-/frontend/dist
-/frontend/src/assets/tailwind.css
-*.bak
-*.old
-/backend/**/temp*.py
-playground
-*.txt
-*.7z
