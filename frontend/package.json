@@ -10,13 +10,13 @@
     "format": "prettier --write --no-error-on-unmatched-pattern --list-different --ignore-path .gitignore **/*.{js,cjs,mjs,ts,tsx,md,mdx,json,astro}"
   },
   "dependencies": {
-    "@astrojs/tailwind": "^3.1.1",
-    "astro": "^2.1.8",
-    "tailwindcss": "^3.3.1"
+    "@astrojs/tailwind": "^5.0.0",
+    "astro": "^3.0.13",
+    "tailwindcss": "^3.3.3"
   },
   "devDependencies": {
-    "prettier": "^2.8.7",
-    "prettier-plugin-astro": "^0.8.0",
-    "prettier-plugin-tailwindcss": "^0.2.6"
+    "prettier": "^3.0.3",
+    "prettier-plugin-astro": "^0.12.0",
+    "prettier-plugin-tailwindcss": "^0.5.4"
   }
 }
